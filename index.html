@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TXDIR-CPO-5570 Candidate Intake Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #004d7a;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+        select, textarea, input[type="text"], input[type="email"], input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .slots-container {
+            margin-left: 20px;
+            display: none;
+        }
+        .summary-line {
+            margin-top: 10px;
+            font-style: italic;
+            color: #333;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #004d7a;
+            color: white;
+            border: none;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003256;
+        }
+        small {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TXDIR-CPO-5570 Candidate Intake Form</h1>
+        <form action="https://formsubmit.co/psllcinfo@projectizedsolutions.com" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New TXDIR Candidate Submission">
+            <input type="hidden" name="_next" value="https://candidates.projectizedsolutions.com/thank-you.html">
+
+            <label>Solicitation Number <small>(You can find this in the job posting or opportunity listing)</small></label>
+            <input type="text" name="Solicitation Number" required>
+
+            <label>Full Name</label>
+            <input type="text" name="Full Name" required>
+
+            <label>Email Address</label>
+            <input type="email" name="Email" required>
+
+            <label>Phone Number</label>
+            <input type="text" name="Phone Number" required>
+
+            <label>City & State of Residence</label>
+            <input type="text" name="City & State" required>
+
+            <label>Role of Interest</label>
+            <select name="Role" required>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Business Analyst">Business Analyst</option>
+                <option value="Software Developer">Software Developer</option>
+            </select>
+
+            <label>Upload Your Resume</label>
+            <input type="file" name="Resume" accept=".pdf,.doc,.docx" required>
+
+            <label>Technical Skills Summary</label>
+            <textarea name="Technical Skills" rows="4" required></textarea>
+
+            <label>Public Sector Experience</label>
+            <select name="Public Sector Experience" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>High Level Details of Public Experience <small>(State or local government experience, project types, departments supported, etc.)</small></label>
+            <textarea name="DIR Experience" rows="3"></textarea>
+
+            <label>Availability to Begin Working on Project</label>
+            <select name="Availability" required>
+                <option value="Immediately Available">Immediately Available</option>
+                <option value="1-2 Weeks">1-2 Weeks</option>
+                <option value="3-4 Weeks">3-4 Weeks</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Availability to Interview</label>
+            <small>Select up to 3 preferred time slots for each selected date</small>
+
+            <label for="date1">Interview Date Option 1</label>
+            <select id="date1" name="Interview Date 1" onchange="showSlots(1)" required>
+                <option value="">-- Select a Date --</option>
+    <option value="Sunday, April 13">Sunday, April 13</option>
+<option value="Monday, April 14">Monday, April 14</option>
+<option value="Tuesday, April 15">Tuesday, April 15</option>
+<option value="Wednesday, April 16">Wednesday, April 16</option>
+<option value="Thursday, April 17">Thursday, April 17</option>
+<option value="Friday, April 18">Friday, April 18</option>
+<option value="Saturday, April 19">Saturday, April 19</option>
+</select>
+
+            <div id="slots1" class="slots-container">
+                <p>Select up to 3 time slots:</p>
+    <label><input type="checkbox" name="slot1" value="08:00 - 09:00 CST" onchange="updateSummary(1)"> 08:00 - 09:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="09:00 - 10:00 CST" onchange="updateSummary(1)"> 09:00 - 10:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="10:00 - 11:00 CST" onchange="updateSummary(1)"> 10:00 - 11:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="11:00 - 12:00 CST" onchange="updateSummary(1)"> 11:00 - 12:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="12:00 - 13:00 CST" onchange="updateSummary(1)"> 12:00 - 13:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="13:00 - 14:00 CST" onchange="updateSummary(1)"> 13:00 - 14:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="14:00 - 15:00 CST" onchange="updateSummary(1)"> 14:00 - 15:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="15:00 - 16:00 CST" onchange="updateSummary(1)"> 15:00 - 16:00 CST</label><br>
+<label><input type="checkbox" name="slot1" value="16:00 - 17:00 CST" onchange="updateSummary(1)"> 16:00 - 17:00 CST</label><br>
+
+            </div>
+            <div id="summary1" class="summary-line" style="display:none;"></div>
+    
+            <label for="date2">Interview Date Option 2</label>
+            <select id="date2" name="Interview Date 2" onchange="showSlots(2)" required>
+                <option value="">-- Select a Date --</option>
+    <option value="Sunday, April 13">Sunday, April 13</option>
+<option value="Monday, April 14">Monday, April 14</option>
+<option value="Tuesday, April 15">Tuesday, April 15</option>
+<option value="Wednesday, April 16">Wednesday, April 16</option>
+<option value="Thursday, April 17">Thursday, April 17</option>
+<option value="Friday, April 18">Friday, April 18</option>
+<option value="Saturday, April 19">Saturday, April 19</option>
+</select>
+
+            <div id="slots2" class="slots-container">
+                <p>Select up to 3 time slots:</p>
+    <label><input type="checkbox" name="slot2" value="08:00 - 09:00 CST" onchange="updateSummary(2)"> 08:00 - 09:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="09:00 - 10:00 CST" onchange="updateSummary(2)"> 09:00 - 10:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="10:00 - 11:00 CST" onchange="updateSummary(2)"> 10:00 - 11:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="11:00 - 12:00 CST" onchange="updateSummary(2)"> 11:00 - 12:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="12:00 - 13:00 CST" onchange="updateSummary(2)"> 12:00 - 13:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="13:00 - 14:00 CST" onchange="updateSummary(2)"> 13:00 - 14:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="14:00 - 15:00 CST" onchange="updateSummary(2)"> 14:00 - 15:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="15:00 - 16:00 CST" onchange="updateSummary(2)"> 15:00 - 16:00 CST</label><br>
+<label><input type="checkbox" name="slot2" value="16:00 - 17:00 CST" onchange="updateSummary(2)"> 16:00 - 17:00 CST</label><br>
+
+            </div>
+            <div id="summary2" class="summary-line" style="display:none;"></div>
+    
+            <label for="date3">Interview Date Option 3</label>
+            <select id="date3" name="Interview Date 3" onchange="showSlots(3)" required>
+                <option value="">-- Select a Date --</option>
+    <option value="Sunday, April 13">Sunday, April 13</option>
+<option value="Monday, April 14">Monday, April 14</option>
+<option value="Tuesday, April 15">Tuesday, April 15</option>
+<option value="Wednesday, April 16">Wednesday, April 16</option>
+<option value="Thursday, April 17">Thursday, April 17</option>
+<option value="Friday, April 18">Friday, April 18</option>
+<option value="Saturday, April 19">Saturday, April 19</option>
+</select>
+
+            <div id="slots3" class="slots-container">
+                <p>Select up to 3 time slots:</p>
+    <label><input type="checkbox" name="slot3" value="08:00 - 09:00 CST" onchange="updateSummary(3)"> 08:00 - 09:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="09:00 - 10:00 CST" onchange="updateSummary(3)"> 09:00 - 10:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="10:00 - 11:00 CST" onchange="updateSummary(3)"> 10:00 - 11:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="11:00 - 12:00 CST" onchange="updateSummary(3)"> 11:00 - 12:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="12:00 - 13:00 CST" onchange="updateSummary(3)"> 12:00 - 13:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="13:00 - 14:00 CST" onchange="updateSummary(3)"> 13:00 - 14:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="14:00 - 15:00 CST" onchange="updateSummary(3)"> 14:00 - 15:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="15:00 - 16:00 CST" onchange="updateSummary(3)"> 15:00 - 16:00 CST</label><br>
+<label><input type="checkbox" name="slot3" value="16:00 - 17:00 CST" onchange="updateSummary(3)"> 16:00 - 17:00 CST</label><br>
+
+            </div>
+            <div id="summary3" class="summary-line" style="display:none;"></div>
+    
+            <label>Desired Hourly Rate (W2 or C2C)</label>
+            <input type="text" name="Desired Hourly Rate" required>
+
+            <label>Additional Notes</label>
+            <textarea name="Notes" rows="3"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script>
+        function showSlots(index) {
+            const dateSelect = document.getElementById(`date${index}`);
+            const slotContainer = document.getElementById(`slots${index}`);
+            const summary = document.getElementById(`summary${index}`);
+            if (dateSelect.value !== '') {{
+                slotContainer.style.display = 'block';
+                summary.style.display = 'block';
+                updateSummary(index);
+            }} else {{
+                slotContainer.style.display = 'none';
+                summary.style.display = 'none';
+            }}
+        }
+
+        function updateSummary(index) {
+            const date = document.getElementById(`date${index}`).value;
+            const slots = document.querySelectorAll(`input[name='slot${index}']:checked`);
+            const summary = document.getElementById(`summary${index}`);
+            const times = Array.from(slots).map(s => s.value).join(', ');
+            summary.textContent = date ? `${date} → ${times}` : '';
+        }
+    </script>
+</body>
+</html>
